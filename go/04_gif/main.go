@@ -2,23 +2,16 @@ package main
 
 import (
 	"image"
-	"image/color"
+	color "image/color" // alias
 	"image/gif"
 	"io"
 	"math"
 	"math/rand"
 	"os"
-)
-
-//!-main
-// Packages not needed by version in book.
-import (
 	"time"
 	"log"
 	"net/http"
 )
-
-//!+main
 
 var palette = []color.Color{color.White, color.Black}
 
@@ -28,21 +21,17 @@ const (
 )
 
 func main() {
-	//!-main
 	source := rand.NewSource(time.Now().UnixNano())
 	generator := rand.New(source)
 
 	if len(os.Args) > 1 && os.Args[1] == "web" {
-		//!+http
 		handler := func(w http.ResponseWriter, r *http.Request) {
 			lissajous(w, generator)
 		}
 		http.HandleFunc("/", handler)
-		//!-http
 		log.Fatal(http.ListenAndServe("localhost:8000", nil))
 		return
 	}
-	//!+main
 	lissajous(os.Stdout, generator)
 }
 
@@ -70,9 +59,10 @@ func lissajous(out io.Writer, generator *rand.Rand) {
 		anim.Delay = append(anim.Delay, delay)
 		anim.Image = append(anim.Image, img)
 	}
-	gif.EncodeAll(out, &anim) // NOTE: ignoring encoding errors
+	gif.EncodeAll(out, &anim)
 }
 
-//!-main
-
 // go run main.go > main.gif
+
+// comments like //!+<name> and //!-<name> 
+// are used to highlight relevant code blocks
