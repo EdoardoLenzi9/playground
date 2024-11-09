@@ -17,7 +17,7 @@ func main() {
 		go fetch(url, ch) // start a goroutine
 	}
 	for range os.Args[1:] {
-		fmt.Println(<-ch) // receive from channel ch
+		fmt.Println(<-ch) // await responses on the channel
 	}
 	fmt.Printf("%.2fs elapsed\n", time.Since(start).Seconds())
 }
