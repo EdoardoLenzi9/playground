@@ -13,9 +13,9 @@ import (
 //!-main
 // Packages not needed by version in book.
 import (
+	"time"
 	"log"
 	"net/http"
-	"time"
 )
 
 //!+main
@@ -29,15 +29,13 @@ const (
 
 func main() {
 	//!-main
-	// The sequence of images is deterministic unless we seed
-	// the pseudo-random number generator using the current time.
-	// Thanks to Randall McPherson for pointing out the omission.
-	rand.Seed(time.Now().UTC().UnixNano())
+	source := rand.NewSource(time.Now().UnixNano())
+	generator := rand.New(source)
 
 	if len(os.Args) > 1 && os.Args[1] == "web" {
 		//!+http
 		handler := func(w http.ResponseWriter, r *http.Request) {
-			lissajous(w)
+			lissajous(w, generator)
 		}
 		http.HandleFunc("/", handler)
 		//!-http
@@ -45,10 +43,10 @@ func main() {
 		return
 	}
 	//!+main
-	lissajous(os.Stdout)
+	lissajous(os.Stdout, generator)
 }
 
-func lissajous(out io.Writer) {
+func lissajous(out io.Writer, generator *rand.Rand) {
 	const (
 		cycles  = 5     // number of complete x oscillator revolutions
 		res     = 0.001 // angular resolution
@@ -56,7 +54,7 @@ func lissajous(out io.Writer) {
 		nframes = 64    // number of animation frames
 		delay   = 8     // delay between frames in 10ms units
 	)
-	freq := rand.Float64() * 3.0 // relative frequency of y oscillator
+	freq := generator.Float64() * 3.0 // relative frequency of y oscillator
 	anim := gif.GIF{LoopCount: nframes}
 	phase := 0.0 // phase difference
 	for i := 0; i < nframes; i++ {
