@@ -1,11 +1,13 @@
 package main
 
 import "fmt"
+import "os"
 
 func main() {
-
 	fmt.Println("hello world")
 
+	args := os.Args[1:]
+	fmt.Println(args)
 }
 
 // go version > 1.23
