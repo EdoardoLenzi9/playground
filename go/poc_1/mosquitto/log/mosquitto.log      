@@ -1,0 +1,47 @@
+1731430779: mosquitto version 2.0.20 starting
+1731430779: Config loaded from /mosquitto/config/mosquitto.conf.
+1731430779: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1731430779: Opening ipv4 listen socket on port 1883.
+1731430779: Opening ipv6 listen socket on port 1883.
+1731430779: Opening websockets listen socket on port 9001.
+1731430779: mosquitto version 2.0.20 running
+1731430810: mosquitto version 2.0.20 terminating
+1731430810: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1731430811: mosquitto version 2.0.20 starting
+1731430811: Config loaded from /mosquitto/config/mosquitto.conf.
+1731430811: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1731430811: Opening ipv4 listen socket on port 1883.
+1731430811: Opening ipv6 listen socket on port 1883.
+1731430811: Opening websockets listen socket on port 9001.
+1731430811: mosquitto version 2.0.20 running
+1731430848: New client connected from ::ffff:192.168.65.1:37981 as root (p5, c1, k60, u'root').
+1731430865: Client root disconnected.
+1731430873: New client connected from ::ffff:192.168.65.1:61820 as root (p5, c1, k60, u'root').
+1731430884: Client root disconnected.
+1731431051: New client connected from ::ffff:192.168.65.1:51745 as root (p5, c1, k60, u'root').
+1731432612: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1731433967: Client root closed its connection.
+1731434124: New client connected from ::ffff:192.168.65.1:36118 as root (p5, c1, k60, u'root').
+1731434184: Client root closed its connection.
+1731434244: New client connected from ::ffff:192.168.65.1:51743 as root (p5, c1, k60, u'root').
+1731434304: Client root closed its connection.
+1731434364: New client connected from ::ffff:192.168.65.1:38807 as root (p5, c1, k60, u'root').
+1731434413: Saving in-memory database to /mosquitto/data//mosquitto.db.
+1731434424: Client root closed its connection.
+1731434484: New client connected from ::ffff:192.168.65.1:25187 as root (p5, c1, k60, u'root').
+1731434544: Client root closed its connection.
+1731434604: New client connected from ::ffff:192.168.65.1:34432 as root (p5, c1, k60, u'root').
+1731434664: Client root closed its connection.
+1731434724: New client connected from ::ffff:192.168.65.1:46559 as root (p5, c1, k60, u'root').
+1731434784: Client root closed its connection.
+1731434844: New client connected from ::ffff:192.168.65.1:62271 as root (p5, c1, k60, u'root').
+1731434904: Client root closed its connection.
+1731434964: New client connected from ::ffff:192.168.65.1:28381 as root (p5, c1, k60, u'root').
+1731435024: Client root closed its connection.
+1731435084: New client connected from ::ffff:192.168.65.1:49128 as root (p5, c1, k60, u'root').
+1731435144: Client root closed its connection.
+1731435204: New client connected from ::ffff:192.168.65.1:44347 as root (p5, c1, k60, u'root').
+1731435264: Client root closed its connection.
+1731435324: New client connected from ::ffff:192.168.65.1:20756 as root (p5, c1, k60, u'root').

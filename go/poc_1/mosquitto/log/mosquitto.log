@@ -1,0 +1,49 @@
+1731430143: mosquitto version 2.0.20 starting
+1731430143: Config loaded from /mosquitto/config/mosquitto.conf.
+1731430143: Warning: File /mosquitto/config/passwd has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 /mosquitto/config/passwd`.
+1731430143: Starting in local only mode. Connections will only be possible from clients running on this machine.
+1731430143: Create a configuration file which defines a listener to allow remote access.
+1731430143: For more details see https://mosquitto.org/documentation/authentication-methods/
+1731430143: Opening ipv4 listen socket on port 1883.
+1731430143: Opening ipv6 listen socket on port 1883.
+1731430143: mosquitto version 2.0.20 running
+1731430388: New connection from 127.0.0.1:35586 on port 1883.
+1731430388: New client connected from 127.0.0.1:35586 as auto-C25DF731-077A-8E4A-55BE-9C012C785722 (p2, c1, k60, u'root').
+1731430413: Client auto-C25DF731-077A-8E4A-55BE-9C012C785722 disconnected.
+1731430424: New connection from 127.0.0.1:45702 on port 1883.
+1731430424: New client connected from 127.0.0.1:45702 as auto-69FC1358-0517-6E6C-7FB2-77A44058AB55 (p2, c1, k60, u'root').
+1731430473: Client auto-69FC1358-0517-6E6C-7FB2-77A44058AB55 disconnected.
+1731430484: New connection from 127.0.0.1:37954 on port 1883.
+1731430484: New client connected from 127.0.0.1:37954 as auto-DD27BA4B-C5A2-4D89-22FD-EE2DE4800492 (p2, c1, k60, u'root').
+1731430484: Client auto-DD27BA4B-C5A2-4D89-22FD-EE2DE4800492 disconnected.
+1731430493: New connection from 127.0.0.1:48066 on port 1883.
+1731430493: New client connected from 127.0.0.1:48066 as auto-956EFA1B-FDB4-F4C2-B83C-567FDA211C99 (p2, c1, k60, u'root').
+1731430493: Client auto-956EFA1B-FDB4-F4C2-B83C-567FDA211C99 disconnected.
+1731430494: New connection from 127.0.0.1:48076 on port 1883.
+1731430494: New client connected from 127.0.0.1:48076 as auto-BE0C6797-E4E5-29BE-72AE-2DE85B9BE1F7 (p2, c1, k60, u'root').
+1731430494: Client auto-BE0C6797-E4E5-29BE-72AE-2DE85B9BE1F7 disconnected.
+1731430494: New connection from 127.0.0.1:48080 on port 1883.
+1731430494: New client connected from 127.0.0.1:48080 as auto-05F6AA60-E7F2-8B17-1ED8-E4CC521EA6B6 (p2, c1, k60, u'root').
+1731430494: Client auto-05F6AA60-E7F2-8B17-1ED8-E4CC521EA6B6 disconnected.
+1731430495: New connection from 127.0.0.1:48088 on port 1883.
+1731430495: New client connected from 127.0.0.1:48088 as auto-4226375C-DFA9-5619-6543-5E654EC6C0AA (p2, c1, k60, u'root').
+1731430495: Client auto-4226375C-DFA9-5619-6543-5E654EC6C0AA disconnected.
+1731430496: New connection from 127.0.0.1:48102 on port 1883.
+1731430496: Client auto-A3C6FAC0-EBF6-F545-DE89-B2794899737D disconnected, not authorised.
+1731430499: New connection from 127.0.0.1:48110 on port 1883.
+1731430499: New client connected from 127.0.0.1:48110 as auto-946DB9EF-6B8B-E47C-CBE8-D055B64F31B4 (p2, c1, k60, u'root').
+1731430499: Client auto-946DB9EF-6B8B-E47C-CBE8-D055B64F31B4 disconnected.
+1731430512: New connection from 127.0.0.1:50932 on port 1883.
+1731430512: New client connected from 127.0.0.1:50932 as auto-25E6C552-B9FE-6746-CA8E-A24F161E874F (p2, c1, k60, u'root').
+1731430517: New connection from 127.0.0.1:46958 on port 1883.
+1731430517: New client connected from 127.0.0.1:46958 as auto-E998A0CB-A105-E86E-3A97-AE5AD030589D (p2, c1, k60, u'root').
+1731430517: Client auto-E998A0CB-A105-E86E-3A97-AE5AD030589D disconnected.
+1731430518: New connection from 127.0.0.1:46964 on port 1883.
+1731430518: New client connected from 127.0.0.1:46964 as auto-8860B506-C179-ABB5-0677-EC20362CDA66 (p2, c1, k60, u'root').
+1731430518: Client auto-8860B506-C179-ABB5-0677-EC20362CDA66 disconnected.
+1731430518: New connection from 127.0.0.1:46980 on port 1883.
+1731430518: New client connected from 127.0.0.1:46980 as auto-3497C9ED-7673-F6E6-48FF-AFFD7D663351 (p2, c1, k60, u'root').
+1731430518: Client auto-3497C9ED-7673-F6E6-48FF-AFFD7D663351 disconnected.
+1731430669: mosquitto version 2.0.20 terminating
+1731430669: Saving in-memory database to /mosquitto/data//mosquitto.db.
