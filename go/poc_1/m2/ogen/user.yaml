@@ -1,0 +1,115 @@
+openapi: 3.0.3
+info:
+  title: m2 - openapi 3.0.3
+  version: 0.0.1
+  description: RESTful API for CRUD a user class
+servers:
+  - url: 127.0.0.1:8000
+tags:
+  - name: user
+    description: An end user account
+paths:
+  /user:
+    post:
+      tags:
+        - user
+      operationId: postUser
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        default:
+          description: Valid
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid
+        '500':
+          description: Error
+  /user/{id}:
+    get:
+      tags:
+        - user
+      operationId: getUser
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        default:
+          description: Valid
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'          
+        '400':
+          description: Invalid
+        '500':
+          description: Error
+    put:
+      tags:
+        - user
+      operationId: putUser
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        default:
+          description: Valid
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'          
+        '400':
+          description: Invalid
+        '500':
+          description: Error
+    delete:
+      tags:
+        - user
+      operationId: deleteUser
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        default:
+          description: Valid
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'          
+        '400':
+          description: Invalid
+        '500':
+          description: Error
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 1
+        name:
+          type: string
+          example: edo
+        height:
+          type: number
+          format: float
+          example: 173.5
+        male:
+          type: boolean
+          example: true

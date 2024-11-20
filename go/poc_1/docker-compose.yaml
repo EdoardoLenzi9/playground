@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  mosquitto:
+    image: eclipse-mosquitto
+    hostname: mosquitto
+    container_name: mosquitto
+    restart: unless-stopped
+    ports:
+      - "1883:1883" # MQTT protocol
+      - "9001:9001" # Web sockets
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+  mqttx:
+    image: emqx/mqttx-web
+    restart: unless-stopped
+    ports:
+      - "80:80"
